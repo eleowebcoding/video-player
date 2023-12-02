@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reproductor</title>
+</head>
+<body>
+
+    <h1>Video</h1>
+    
+    <div id="video-container">
+        <video id="video" poster="./images/poster.jpg" muted src="lofi.mp4" width="500" title="Lofi Video"></video>
+    
+        <div id="botones" class="hidden">
+            <button id="reg" aria-label="Retrocede 10 segundos" title="Retrocede 10 segundos"></button>
+            <button id="play" aria-label="Play" title="Play"></button>
+            <button id="stop" hidden aria-label="Pausa" title="Pausa"></button>
+            <button id="ava" aria-label="Avanza 10 segundos" title="Avanza 10 segundos"></button>
+        </div>
+        <div class="progress-play hidden">
+            <input id="progres" type="range" min="0" value="0" step="1">
+        </div>
+        <div id="temporizador"></div>
+    </div>
+    
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
